@@ -1,34 +1,21 @@
-# Full_Manga_Downloader
-Did you ever felt like you want to download a manga but you felt lazy to search online ? no ? Well I did , that's why I made this project
+# Manga Downloader
 
-This Python script automates the process of downloading manga chapters from www.mngdoom.com. It allows users to search for a manga by name, select from the search results, and download the chapters directly to a specified folder.
+This Python script allows you to download manga chapters from MangaDex and convert them into a PDF file. It retrieves manga information and images through the MangaDex API, facilitating easy access to your favorite titles.
 
-## Prerequisites
+## Features
 
-Before you run this script, make sure you have the following installed:
+- Search for manga by title.
+- Retrieve and download chapters in either English or Arabic.
+- Convert downloaded images to a PDF document.
+- Automatically remove the chapter images after conversion.
+
+## Requirements
 
 - Python 3.x
-- Selenium WebDriver
-- BeautifulSoup4
-- Requests
+- Pillow library for image processing
+- Requests library for API calls
 
-Additionally, you will need Google Chrome and ChromeDriver installed on your system.
+You can install the required libraries using pip:
 
-## Installation
-
-First, clone the repository to your local machine:
-
-    git clone https://github.com/yourusername/manga-downloader.git
-
-Navigate to the project directory:
-
-    cd manga-downloader
-
-Install the required Python packages:
-
-    pip install -r requirements.txt
-
-## Configuration
-
-- Ensure ChromeDriver's path is correctly set in your system's PATH variable.
-- The script currently downloads manga from www.mngdoom.com. Make sure the website is accessible in your region.
+```bash
+pip install Pillow requests
