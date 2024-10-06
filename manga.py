@@ -12,6 +12,7 @@ def transform_topdf(folder_path):
     image[0].save(pdf_path,"PDF",resolution=100.0,save_all=True,append_images=image[1:])
     print("PDF Created.")
     shutil.rmtree(folder_path)
+    os.system("clear")
 def getting_domain(manga_name):
     api_url = "https://api.mangadex.org/manga"
     search_parameter = {
@@ -133,7 +134,7 @@ def download_image(url, folder_path, file_name):
 manga_name = input("Enter the Manga name: ")
 try:
     with open("download_folder.txt",'r') as file:
-        path=os.path.join(file.readline(),manga_name)
+        download_dir=os.path.join(file.readline(),manga_name)
 except:
     download_dir = input("Enter the download folder path: ")
     with open("download_folder.txt",'w') as file:
