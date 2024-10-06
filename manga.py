@@ -56,7 +56,7 @@ def getting_chapters(manga_name):
     limit = 100
     offset = 0
     all_manga_chap=[]
-    lang = input("English or Arabic? (en, ar): ").strip().lower()
+    lang = input("English or Arabic? (en,ar...): ").strip().lower()
         
     while True:
         params = {"translatedLanguage[]": lang, "limit": limit, "offset": offset, "order[chapter]": "asc"}
